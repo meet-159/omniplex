@@ -8,7 +8,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     }
 
     // Store user session
-    req.session.user = user;
+    req.body.user = user;
 
     return res.redirect("/dashboard");
   })(req, res);

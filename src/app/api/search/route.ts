@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
-const BING_API_KEY = process.env.BING_API_KEY;
+const BING_API_KEY = process.env.NEXT_PUBLIC_BING_API_KEY;
 const BING_SEARCH_URL = "https://www.googleapis.com/customsearch/v1";
 
 export const runtime = "edge";
